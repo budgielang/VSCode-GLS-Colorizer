@@ -10,6 +10,3 @@ The GLS Colorizer distinguishes all commands, command info, quotations and brack
 ![GLS Colorizer Example](https://raw.githubusercontent.com/Ben-Wolf/VSCode-GLS-Colorizer/master/screenshots/example.png)
 
 ## Known Issues
-
-* Any text after a colon will appear a regular text regardless if it is in quotes or brackets.
-* Colon color and regular text color is not distinguished.

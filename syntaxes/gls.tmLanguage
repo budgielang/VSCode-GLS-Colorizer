@@ -15,47 +15,41 @@
 
         <key>patterns</key>
         <array>
+            <!-- GLS Commands -->
             <dict>
-                <!-- GLS Commands -->
                 <key>match</key>
                 <string>\b(?i:(for each start|array initialize|array length|block end|break|class end|class start|comment block start|comment block end|comment block|comment doc start|comment doc end|comment doc tag|comment line|concatenate|constructor start|constructor end|continue|dictionary contains key|dictionary keys|dictionary new|dictionary new end|dictionary new start|dictionary pair|dictionary type|else if start|else start|enum|enum end|enum member|enum start|file end|file start|for each end|for each key start|for each pair start|for each pair start|for each start|for numbers end|for numbers start|function end|function start|if end|if start|import|index|interface end|interface method|interface start|is not null|is null|lambda body|list initialize|list length|list pop|list push|list type|literal|main end|main start|math absolute|member variable| member variable declare|native call|not|operation|operator|parenthesis|print|rest parameters|return|string format|string index|string length|super constructor|this|type|value|variable|variable inline|variable start|while end|while start))\b</string>
                 <key>name</key>
                 <string>keyword</string>
             </dict>
+            <!-- Brackets -->
             <dict>
-                <!-- Quotes with " -->
+                <key>match</key>
+                <string>{|}</string>
+                <key>name</key>
+                <string>comment.line</string>
+            </dict>  
+            <!-- Quotes with " -->
+            <dict>
                 <key>match</key>
                 <string>"(.*?)"</string>
                 <key>name</key>
-                <string>token.string</string>
+                <string>string.tag</string>
             </dict>
+            <!-- Quotes with ' -->
             <dict>
-                <!-- Quotes with ' -->
                 <key>match</key>
                 <string>'(.*?)'</string>
                 <key>name</key>
-                <string>token.string</string>
+                <string>string.tag</string>
             </dict>
+            <!-- GLS Colon -->
             <dict>
-                <!-- GLS after colon -->
                 <key>match</key>
-                <string>:(.*?)\n</string>
+                <string>:</string>
                 <key>name</key>
                 <string>keyword.other.unit</string>
-            </dict>
-            <dict>
-                <!-- GLS Colon -->
-                <key>match</key>
-                <string>\b(?i:(\:))\b</string>
-                <key>name</key>
-                <string>error-token</string>
-            </dict>
-            <dict>
-                <key>match</key>
-                <string>:(.*?)</string>
-                <key>name</key>
-                <string>constant.numeric</string>
-            </dict>                                
+            </dict>  
         </array>
         <key>uuid</key>
         <string>3ce37e3a-6023-4f4c-bb60-182b8231faa2</string>
