@@ -1,0 +1,26 @@
+{
+    "name": "gls",
+    "displayName": "GLS Colorizer",
+    "description": "Syntax Highlighting for .gls files",
+    "version": "0.0.1",
+    "publisher": "Benjamin Wolf",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "gls",
+            "aliases": ["GLS file", "gls"],
+            "extensions": [".gls"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gls",
+            "scopeName": "source.gls",
+            "path": "./syntaxes/gls.tmLanguage"
+        }]
+    }
+}
