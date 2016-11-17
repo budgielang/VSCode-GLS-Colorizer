@@ -27,7 +27,7 @@
                 <key>match</key>
                 <string>{|}</string>
                 <key>name</key>
-                <string>comment.line</string>
+                <string>entity.other.attribute-name</string>
             </dict>  
             <!-- Quotes with " -->
             <dict>
@@ -48,7 +48,7 @@
                 <key>match</key>
                 <string>:</string>
                 <key>name</key>
-                <string>keyword.other.unit</string>
+                <string>entity.name.selector</string>
             </dict>  
         </array>
         <key>uuid</key>
