@@ -7,7 +7,7 @@ Adds syntax colorization for .gls files.
 
 The GLS Colorizer distinguishes all commands, command info, quotations and brackets with their own color.
 
-![GLS Colorizer Example](screenshots/example.png\)
+![GLS Colorizer Example](https://raw.githubusercontent.com/Ben-Wolf/VSCode-GLS-Colorizer/master/screenshots/example.png)
 
 ## Known Issues
 
