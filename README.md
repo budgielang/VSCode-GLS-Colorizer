@@ -10,3 +10,7 @@ The GLS Colorizer distinguishes all commands, command info, quotations and brack
 ![GLS Colorizer Example](https://raw.githubusercontent.com/Ben-Wolf/VSCode-GLS-Colorizer/master/screenshots/example.png)
 
 ## Known Issues
+
+*Comment blocks only affect individual lines. 
+
+![Comment Block Issue](screenshots/comment_issue.png)

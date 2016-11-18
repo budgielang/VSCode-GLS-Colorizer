@@ -15,10 +15,41 @@
 
         <key>patterns</key>
         <array>
+            <!-- GLS Comments -->
+            <dict>
+                <key>match</key>
+                <string>comment block start|comment block end</string>
+                <key>name</key>
+                <string>constant.numeric</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>comment line(.*?)\n</string>
+                <key>name</key>
+                <string>constant.numeric</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>comment block(.*?)\n</string>
+                <key>name</key>
+                <string>constant.numeric</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>comment doc start|comment doc end</string>
+                <key>name</key>
+                <string>constant.numeric</string>
+            </dict>
+           <dict>
+                <key>match</key>
+                <string>comment doc tag</string>
+                <key>name</key>
+                <string>constant.numeric</string>
+            </dict> 
             <!-- GLS Commands -->
             <dict>
                 <key>match</key>
-                <string>\b(?i:(for each start|array initialize|array length|block end|break|class end|class start|comment block start|comment block end|comment block|comment doc start|comment doc end|comment doc tag|comment line|concatenate|constructor start|constructor end|continue|dictionary contains key|dictionary keys|dictionary new|dictionary new end|dictionary new start|dictionary pair|dictionary type|else if start|else start|enum|enum end|enum member|enum start|file end|file start|for each end|for each key start|for each pair start|for each pair start|for each start|for numbers end|for numbers start|function end|function start|if end|if start|import|index|interface end|interface method|interface start|is not null|is null|lambda body|list initialize|list length|list pop|list push|list type|literal|main end|main start|math absolute|member variable| member variable declare|native call|not|operation|operator|parenthesis|print|rest parameters|return|string format|string index|string length|super constructor|this|type|value|variable|variable inline|variable start|while end|while start))\b</string>
+                <string>\b(?i:(for each start|array initialize|array length|block end|break|class end|class start|comment doc tag|comment line|concatenate|constructor start|constructor end|continue|dictionary contains key|dictionary keys|dictionary new|dictionary new end|dictionary new start|dictionary pair|dictionary type|else if start|else start|enum|enum end|enum member|enum start|file end|file start|for each end|for each key start|for each pair start|for each pair start|for each start|for numbers end|for numbers start|function end|function start|if end|if start|import|index|interface end|interface method|interface start|is not null|is null|lambda body|list initialize|list length|list pop|list push|list type|literal|main end|main start|math absolute|member variable| member variable declare|native call|not|operation|operator|parenthesis|print|rest parameters|return|string format|string index|string length|super constructor|this|type|value|variable|variable inline|variable start|while end|while start))\b</string>
                 <key>name</key>
                 <string>keyword</string>
             </dict>
@@ -49,7 +80,29 @@
                 <string>:</string>
                 <key>name</key>
                 <string>entity.name.selector</string>
-            </dict>  
+            </dict>
+            <!-- After Colon, Color is too close to bracket color. Goal is to make all text not after colon ERROR-text
+            <dict>
+                <key>begin</key>
+                <string>:</string>
+                <key>end</key>
+                <string></string>
+                <key>match</key>
+                <string>.</string>
+                <key>name</string>
+                <string>support.type.property-name</string>
+            </dict> -->
+            <!-- INVALID Text, not read to implement -->
+            <!-- <dict>
+                <key>begin</key>
+                <string>\n\b</string>
+                <key>end</key>
+                <string></string>
+                <key>match</key>
+                <string>.</string>
+                <key>name</key>
+                <string>error-token</string>
+            </dict> -->
         </array>
         <key>uuid</key>
         <string>3ce37e3a-6023-4f4c-bb60-182b8231faa2</string>
