@@ -1,4 +1,4 @@
-# VSCode GLS Colorizer
+# Visual Studio Code GLS Colorizer
 
 General Language Syntax language support for Visual Studio Code.
 Adds syntax colorization for .gls files.
@@ -7,10 +7,15 @@ Adds syntax colorization for .gls files.
 
 The GLS Colorizer distinguishes all commands, command info, quotations and brackets with their own color.
 
-![GLS Colorizer Example](https://raw.githubusercontent.com/Ben-Wolf/VSCode-GLS-Colorizer/master/screenshots/example.png)
+![GLS Colorizer Example](screenshots/example.png)
 
-## Known Issues
+## Running/Testing
 
-*Comment blocks only affect individual lines. 
+In order to run/test/fiddle with the GLS Colorizer:
 
-![Comment Block Issue](screenshots/comment_issue.png)
+  * Clone this repository
+  * Open the repository folder in Visual Studio Code
+  * Press ```F5``` to run developer mode for the extension
+  * Create a new file with the ```.gls``` extension
+  * Modify the .tmLanguage file to change the Colorizer
+  * Code in GLS!

@@ -72,37 +72,22 @@
                 <key>match</key>
                 <string>'(.*?)'</string>
                 <key>name</key>
-                <string>string.tag</string>
+                <string>string.type</string>
             </dict>
             <!-- GLS Colon -->
             <dict>
                 <key>match</key>
                 <string>:</string>
                 <key>name</key>
-                <string>entity.name.selector</string>
+                <string>entity.other.inherited-class</string>
             </dict>
-            <!-- After Colon, Color is too close to bracket color. Goal is to make all text not after colon ERROR-text
+             <!--After Colon, Color is too close to bracket color. Goal is to make all text not after colon ERROR-text-->
             <dict>
-                <key>begin</key>
-                <string>:</string>
-                <key>end</key>
-                <string></string>
                 <key>match</key>
-                <string>.</string>
+                <string>^(?:(?!for each start|array initialize|array length|block end|break|class end|class start|comment doc tag|comment line|concatenate|constructor start|constructor end|continue|dictionary contains key|dictionary keys|dictionary new|dictionary new end|dictionary new start|dictionary pair|dictionary type|else if start|else start|enum|enum end|enum member|enum start|file end|file start|for each end|for each key start|for each pair start|for each pair start|for each start|for numbers end|for numbers start|function end|function start|if end|if start|import|index|interface end|interface method|interface start|is not null|is null|lambda body|list initialize|list length|list pop|list push|list type|literal|main end|main start|math absolute|member variable| member variable declare|native call|not|operation|operator|parenthesis|print|rest parameters|return|string format|string index|string length|super constructor|this|type|value|variable|variable inline|variable start|while end|while start).)*$</string>
                 <key>name</string>
-                <string>support.type.property-name</string>
-            </dict> -->
-            <!-- INVALID Text, not read to implement -->
-            <!-- <dict>
-                <key>begin</key>
-                <string>\n\b</string>
-                <key>end</key>
-                <string></string>
-                <key>match</key>
-                <string>.</string>
-                <key>name</key>
-                <string>error-token</string>
-            </dict> -->
+                <string>invalid.illegal</string>
+            </dict> 
         </array>
         <key>uuid</key>
         <string>3ce37e3a-6023-4f4c-bb60-182b8231faa2</string>
